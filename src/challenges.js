@@ -14,6 +14,9 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+//O método split() divide uma String em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array. A divisão é feita procurando um padrão, onde o padrão é fornecido como o primeiro parâmetro na chamada do método.
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
 function splitSentence(phrase) {
   let result = phrase.split(' ');
   return result;
@@ -32,12 +35,23 @@ function footballPoints(wins, ties) {
   let result = wins * 3 + ties * 1;
   return result;
 }
-console.log(footballPoints(14, 8));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+//A função Math.max() retorna o maior de um ou mais números.
+//O operador spread ( ...) nos permite copiar rapidamente todo ou parte de um array ou objeto existente em outro array ou objeto.
+//https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+function highestCount(valuesArr) {
+  let max = Math.max(...valuesArr);
+  let result = 0;
+  for (let index = 0; index < valuesArr.length; index += 1) {
+    if (max === valuesArr[index]) {
+      result += 1;
+    }
+  }
+  return result;
 }
+let teste = [0, 0, 0];
+console.log(highestCount(teste));
 
 // Desafio 7
 function catAndMouse() {

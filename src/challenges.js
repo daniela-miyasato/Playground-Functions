@@ -88,7 +88,7 @@ function fizzBuzz(parameter) {
 
 // Desafio 9
 // The replace() method returns a new string with the value(s) replaced.
-// syntax // string.replace(searchValue, newValue)
+// syntax -> string.replace(searchValue, newValue)
 // https://www.w3schools.com/jsref/jsref_replace.asp
 // https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call
 

@@ -87,11 +87,31 @@ function fizzBuzz(parameter) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+// The replace() method returns a new string with the value(s) replaced.
+// syntax // string.replace(searchValue, newValue)
+// https://www.w3schools.com/jsref/jsref_replace.asp
+// https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call
+
+function encode(phrase) {
+  let result = phrase
+    .replace(/a/g, 1)
+    .replace(/e/g, 2)
+    .replace(/i/g, 3)
+    .replace(/o/g, 4)
+    .replace(/u/g, 5);
+  return result;
 }
-function decode() {
-  // seu código aqui
+// let phrase = 'testando o teste por aqui';
+// console.log(encode(phrase));
+
+function decode(phrase) {
+  let result = phrase
+    .replace(/1/g, 'a')
+    .replace(/2/g, 'e')
+    .replace(/3/g, 'i')
+    .replace(/4/g, 'o')
+    .replace(/5/g, 'u');
+  return result;
 }
 
 module.exports = {

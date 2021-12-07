@@ -1,24 +1,3 @@
-// Desafio 10
-// The sort() method sorts an array alphabetically:
-// https://www.w3schools.com/js/js_array_sort.asp
-function techList(techs, name) {
-  techs.sort();
-  let result = [];
-
-  for (let index = 0; index < techs.length; index += 1) {
-    let object = {
-      tech: techs[index],
-      name: name,
-    };
-    result.push(object);
-  }
-
-  if (techs.length === 0) {
-    result = 'Vazio!';
-  }
-  return result;
-}
-
 // Desafio 11
 function generatePhoneNumber(numbers) {
   let phoneNumber = null;
@@ -45,19 +24,19 @@ function generatePhoneNumber(numbers) {
   }
   return phoneNumber;
 }
-// Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
 
-// Desafio 13
-function hydrate() {
-  // seu código aqui
-}
-
-module.exports = {
-  generatePhoneNumber,
-  techList,
-  hydrate,
-  triangleCheck,
-};
+phoneNumber =
+  '(' +
+  numbers[0] +
+  numbers[1] +
+  ') ' +
+  numbers[2] +
+  numbers[3] +
+  numbers[4] +
+  numbers[5] +
+  numbers[6] +
+  '-' +
+  numbers[7] +
+  numbers[8] +
+  numbers[9] +
+  numbers[10];

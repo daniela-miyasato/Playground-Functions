@@ -1,10 +1,12 @@
 // Desafio 1
 function compareTrue(value1, value2) {
+  let result;
   if (value1 === true && value2 === true) {
-    return true;
+    result = true;
   } else {
-    return false;
+    result = false;
   }
+  return result;
 }
 
 // Desafio 2
@@ -40,6 +42,7 @@ function footballPoints(wins, ties) {
 // A função Math.max() retorna o maior de um ou mais números.
 // O operador spread ( ...) nos permite copiar rapidamente todo ou parte de um array ou objeto existente em outro array ou objeto.
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+
 function highestCount(valuesArr) {
   let max = Math.max(...valuesArr);
   let result = 0;
@@ -54,6 +57,7 @@ function highestCount(valuesArr) {
 // Desafio 7
 // Math.abs(x) returns the absolute (positive) value of x:
 // https://www.w3schools.com/js/js_math.asp
+
 function catAndMouse(mouse, cat1, cat2) {
   let gap1 = Math.abs(mouse - cat1);
   let gap2 = Math.abs(mouse - cat2);

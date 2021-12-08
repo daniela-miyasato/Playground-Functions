@@ -40,3 +40,27 @@ phoneNumber =
   numbers[8] +
   numbers[9] +
   numbers[10];
+
+// desafio 13
+
+//.match retorna uma correspondência de uma string com uma expressão regular
+// \d Encontra correspondência com um número. Equivalente a [0-9].
+//  /g Realiza uma pesquisa global (encontrando todas as correspondências em vez de parar após a primeira combinação)
+
+let numerosArray = string.match(/\d+/g);
+let arrayToString = numerosArray.join('');
+let sum = 0;
+
+for (let values of arrayToString) {
+  //parseInt - propriedade pesquisada para converter numeros na forma de string para numbers
+  let stringToNumber = parseInt(values);
+
+  if (stringToNumber > 0 && stringToNumber < 9) {
+    sum += stringToNumber;
+  }
+
+  if (sum === 1) {
+    return sum + ' copo de água';
+  }
+  return sum + ' copos de água';
+}

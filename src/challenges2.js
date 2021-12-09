@@ -84,6 +84,7 @@ function triangleCheck(lineA, lineB, lineC) {
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
 
 function hydrate(drinks) {
+  // retornar os números da string.
   let regex = /\d+/g;
   let nDrinks = drinks.match(regex);
   let nWater = 0;
@@ -97,7 +98,6 @@ function hydrate(drinks) {
     return nWater + ' copos de água';
   }
 }
-console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,

@@ -76,9 +76,28 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+
+// O método match() retorna uma correspondência entre uma string com uma expressão regular.
+// syntax = string.match(regexp)
+// https://www.w3schools.com/jsref/jsref_match.asp
+// https://stackoverflow.com/questions/1183903/regex-using-javascript-to-return-just-numbers
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
+
+function hydrate(drinks) {
+  let regex = /\d+/g;
+  let nDrinks = drinks.match(regex);
+  let nWater = 0;
+
+  for (let index = 0; index < nDrinks.length; index += 1) {
+    nWater += parseInt(nDrinks[index]);
+  }
+  if (nWater === 1) {
+    return nWater + ' copo de água';
+  } else {
+    return nWater + ' copos de água';
+  }
 }
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,

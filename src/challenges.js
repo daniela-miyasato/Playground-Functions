@@ -16,9 +16,6 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-// O método split() divide uma String em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array. A divisão é feita procurando um padrão, onde o padrão é fornecido como o primeiro parâmetro na chamada do método.
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
-
 function splitSentence(phrase) {
   let result = phrase.split(' ');
   return result;
@@ -28,7 +25,7 @@ function splitSentence(phrase) {
 function concatName(listaDeNomes) {
   let last = listaDeNomes[listaDeNomes.length - 1];
   let first = listaDeNomes[0];
-  let result = last + ', ' + first;
+  let result = `${last}, ${first}`;
   return result;
 }
 
@@ -39,10 +36,6 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-// A função Math.max() retorna o maior de um ou mais números.
-// O operador spread ( ...) nos permite copiar rapidamente todo ou parte de um array ou objeto existente em outro array ou objeto.
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
-
 function highestCount(valuesArr) {
   let max = Math.max(...valuesArr);
   let result = 0;
@@ -55,9 +48,6 @@ function highestCount(valuesArr) {
 }
 
 // Desafio 7
-// Math.abs(x) returns the absolute (positive) value of x:
-// https://www.w3schools.com/js/js_math.asp
-
 function catAndMouse(mouse, cat1, cat2) {
   let gap1 = Math.abs(mouse - cat1);
   let gap2 = Math.abs(mouse - cat2);
@@ -91,11 +81,6 @@ function fizzBuzz(parameter) {
 }
 
 // Desafio 9
-// The replace() method returns a new string with the value(s) replaced.
-// syntax -> string.replace(searchValue, newValue)
-// https://www.w3schools.com/jsref/jsref_replace.asp
-// https://stackoverflow.com/questions/16576983/replace-multiple-characters-in-one-replace-call
-
 function encode(phrase) {
   let result = phrase
     .replace(/a/g, 1)
@@ -105,8 +90,6 @@ function encode(phrase) {
     .replace(/u/g, 5);
   return result;
 }
-// let phrase = 'testando o teste por aqui';
-// console.log(encode(phrase));
 
 function decode(phrase) {
   let result = phrase

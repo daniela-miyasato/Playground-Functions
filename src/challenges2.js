@@ -1,6 +1,4 @@
 // Desafio 10
-// The sort() method sorts an array alphabetically:
-// https://www.w3schools.com/js/js_array_sort.asp
 function techList(techs, name) {
   techs.sort();
   let result = [];
@@ -8,7 +6,7 @@ function techList(techs, name) {
   for (let index = 0; index < techs.length; index += 1) {
     let object = {
       tech: techs[index],
-      name: name,
+      name,
     };
     result.push(object);
   }
@@ -40,25 +38,25 @@ function generatePhoneNumber(numbers) {
   }
 
   if (numbers.length === 11) {
-    phoneNumber =
-      '(' +
-      numbers[0] +
-      numbers[1] +
-      ') ' +
-      numbers[2] +
-      numbers[3] +
-      numbers[4] +
-      numbers[5] +
-      numbers[6] +
-      '-' +
-      numbers[7] +
-      numbers[8] +
-      numbers[9] +
-      numbers[10];
+    phoneNumber = `(${
+      numbers[0]
+    }${numbers[1]
+    }) ${
+      numbers[2]
+    }${numbers[3]
+    }${numbers[4]
+    }${numbers[5]
+    }${numbers[6]
+    }-${
+      numbers[7]
+    }${numbers[8]
+    }${numbers[9]
+    }${numbers[10]}`;
 
     return phoneNumber;
   }
 }
+
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let triangle = false;
@@ -76,13 +74,6 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-
-// O método match() retorna uma correspondência entre uma string com uma expressão regular.
-// syntax = string.match(regexp)
-// https://www.w3schools.com/jsref/jsref_match.asp
-// https://stackoverflow.com/questions/1183903/regex-using-javascript-to-return-just-numbers
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
-
 function hydrate(drinks) {
   // retornar os números da string.
   let regex = /\d+/g;
@@ -93,10 +84,9 @@ function hydrate(drinks) {
     nWater += parseInt(nDrinks[index]);
   }
   if (nWater === 1) {
-    return nWater + ' copo de água';
-  } else {
-    return nWater + ' copos de água';
+    return `${nWater} copo de água`;
   }
+  return `${nWater} copos de água`;
 }
 
 module.exports = {

@@ -1,4 +1,4 @@
-# Playground-Functions
+# playground-functions
 Projeto de avaliação do modulo de Fundamentos da Trybe 
 
 - Introdução à JavaScript e Lógica de Programação
